@@ -1,0 +1,90 @@
+@import '../constants/constants.scss';
+
+.details {
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1440px;
+        margin: 0 auto;
+        padding: 16px 0;
+        &__home,
+        &__project {
+            font-size: 28px;
+            display: flex;
+            align-items: flex-start;
+            font-weight: bolder;
+            color: $accent;
+            path {
+                color: $accent;
+            }
+        }
+    }
+    &__cont {
+        width: 1440px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 48px auto;
+        border-radius: 16px;
+        > div {
+            margin-bottom: 16px;
+        }
+    }
+    &__title {
+        text-align: center;
+        font-size: 48px;
+        font-weight: bolder;
+        color: $accent;
+    }
+    &__description {
+        font-size: 24px;
+        color: $secondary;
+    }
+    &__functional {
+        &__header {
+            font-size: 32px;
+            color: $secondary;
+            margin-bottom: 12px;
+            font-weight: bolder;
+        }
+        ul {
+            padding: 16px 48px;
+            background-color: $navy;
+            border-radius: 8px;
+            li {
+                margin-bottom: 8px;
+                list-style-type: disclosure-closed;
+                &::marker {
+                    color: $accent;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &__additional {
+        &__header {
+            font-size: 32px;
+            color: $secondary;
+            margin-bottom: 12px;
+            font-weight: bolder;
+        }
+        &__block {
+            margin-bottom: 12px;
+            &__title {
+                font-size: 24px;
+                color: $secondary;
+                margin-bottom: 8px;
+            }
+            code {
+                padding: 10px;
+                background-color: $navy;
+                display: inline-block;
+                border-radius: 8px;
+                color: $accent;
+            }
+        }
+    }
+}
